@@ -10,22 +10,39 @@
 //                                                                  
 ///////////////////////////////////////////////////////////////////////
 
-
+#include <SFML/Graphics.hpp>
+#include "GameWindow.h"
+using namespace sf;
 
 int main()
 {
 
+	GameWindow gameWindow;
 
+	//main game loop
+	while (gameWindow.isOpen())
+	{
+
+		//event processing
+		Event event;
+		while (gameWindow.pollEvent(event))
+		{
+
+			if (event.type == Event::Closed)
+				gameWindow.close();
+
+		} //end while
+
+		gameWindow.display();
+
+	} //end while
 
 	return 0;
 
 } //end main
 
 //test example from tutorial to make sure library linking works
-/*
-#include <SFML/Graphics.hpp>
-
-int main()
+/*int main()
 {
 	sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
 	sf::CircleShape shape(100.f);

@@ -5,7 +5,7 @@
 // Programmer: Daniel Posse             
 //
 // Description:
-//	Generic character class
+//	Generic character class - abstract class
 //	Parent to Player and Enemy
 //                                                                  
 ///////////////////////////////////////////////////////////////////////
@@ -18,9 +18,13 @@ class Character
 {
 
 private:
-	Shape characterModel;
+	Shape *characterModel;
+	double speed;
+	//TODO
+	// implement vision/fov
 
 public:
-
+	virtual void move() = 0;
+	virtual void shoot() = 0;
 
 }; //end class

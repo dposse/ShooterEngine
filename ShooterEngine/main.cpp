@@ -12,6 +12,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "GameWindow.h"
+#include "Player.h"
 using namespace sf;
 
 int main()
@@ -33,6 +34,7 @@ int main()
 
 		} //end while
 
+		
 		gameWindow.display();
 
 	} //end while

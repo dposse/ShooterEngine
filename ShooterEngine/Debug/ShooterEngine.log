@@ -1,9 +1,0 @@
-﻿  main.cpp
-c:\users\labuser\source\repos\shooterengine\shooterengine\character.h(21): error C2259: 'sf::Shape': cannot instantiate abstract class
-  c:\users\labuser\source\repos\shooterengine\shooterengine\character.h(21): note: due to following members:
-  c:\users\labuser\source\repos\shooterengine\shooterengine\character.h(21): note: 'size_t sf::Shape::getPointCount(void) const': is abstract
-  c:\users\labuser\source\repos\shooterengine\sfml-2.5.1\include\sfml\graphics\shape.hpp(196): note: see declaration of 'sf::Shape::getPointCount'
-  c:\users\labuser\source\repos\shooterengine\shooterengine\character.h(21): note: 'sf::Vector2f sf::Shape::getPoint(size_t) const': is abstract
-  c:\users\labuser\source\repos\shooterengine\sfml-2.5.1\include\sfml\graphics\shape.hpp(213): note: see declaration of 'sf::Shape::getPoint'
-c:\users\labuser\source\repos\shooterengine\shooterengine\player.h(21): error C2059: syntax error: 'constant'
-c:\users\labuser\source\repos\shooterengine\shooterengine\main.cpp(38): error C3867: 'Player::characterModel': non-standard syntax; use '&' to create a pointer to member
